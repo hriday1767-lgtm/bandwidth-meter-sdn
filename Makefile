@@ -1,3 +1,4 @@
+cat << 'EOF' > Makefile
 # Bandwidth Meter and Traffic Analyzer -- run everything with make.
 #
 #   make all            clean -> controller -> load sweep -> comparison -> baseline
@@ -64,6 +65,7 @@ controller:
 
 sweep:
 	printf 'exit\n' | sudo python3 experiments/run_experiment.py
+	sudo chown -R $$(whoami):$$(whoami) results/ || true
 	sudo mn -c >/dev/null 2>&1 || true
 
 compare:
@@ -75,6 +77,7 @@ compare:
 baseline:
 	sudo mn -c >/dev/null 2>&1 || true
 	sudo python3 experiments/run_baseline.py --repeats $(REPEATS)
+	sudo chown -R $$(whoami):$$(whoami) results/ || true
 
 baseline-table:
 	python3 analysis/baseline_compare.py
@@ -82,6 +85,7 @@ baseline-table:
 multiclient:
 	sudo mn -c >/dev/null 2>&1 || true
 	sudo python3 experiments/run_multiclient.py --repeats $(REPEATS)
+	sudo chown -R $$(whoami):$$(whoami) results/ || true
 
 multiclient-table:
 	python3 analysis/baseline_compare.py --kind multiclient
@@ -111,3 +115,4 @@ shots:
 
 all: check clean controller sweep compare baseline baseline-table multiclient multiclient-table summary stop
 	@echo "ALL DONE - results are in ./results"
+EOF
