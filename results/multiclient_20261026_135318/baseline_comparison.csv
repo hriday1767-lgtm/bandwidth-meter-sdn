@@ -1,3 +1,0 @@
-load,mode,runs,loss_pct,delivery_pct,throughput_mbps,reroutes,static_markers
-multiclient,static,1,25.535000000000004,74.465,4.64757186,0,1
-multiclient,dynamic,1,0.58,99.42,6.53906002,1,0

@@ -1,3 +1,0 @@
-run_dir,mode,load,rep,flow_id,rate_pps,size_bytes,start_ts,end_ts
-static__rep1,static,multiclient,1,11+12,400+400,1024,1793022801.314,1793022832.868
-dynamic__rep1,dynamic,multiclient,1,11+12,400+400,1024,1793022835.875,1793022866.428
