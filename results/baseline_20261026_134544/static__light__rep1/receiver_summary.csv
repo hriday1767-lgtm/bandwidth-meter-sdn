@@ -1,0 +1,2 @@
+flow_id,expected,received,lost,loss_pct,duration_s,throughput_bps
+1,4000,3987,13,0.33,20.0616,814030.68

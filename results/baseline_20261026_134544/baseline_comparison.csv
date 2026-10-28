@@ -1,0 +1,7 @@
+load,mode,runs,loss_pct,delivery_pct,throughput_mbps,reroutes,static_markers
+light,static,1,0.325,99.675,0.81403068,0,0
+light,dynamic,1,0.5,99.5,0.81515377,0,0
+moderate,static,1,24.099999999999998,75.9,4.69416333,0,1
+moderate,dynamic,1,0.0,100.0,6.5554333300000005,1,0
+heavy,static,1,58.5675430643699,41.4324569356301,4.77649975,0,1
+heavy,dynamic,1,0.0,100.0,12.28984637,1,0

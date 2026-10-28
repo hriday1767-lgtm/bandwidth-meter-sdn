@@ -1,0 +1,7 @@
+run_dir,mode,load,rep,flow_id,rate_pps,size_bytes,start_ts,end_ts
+static__light__rep1,static,light,1,1,200,512,1793022347.844,1793022372.385
+dynamic__light__rep1,dynamic,light,1,1,200,512,1793022375.641,1793022400.164
+static__moderate__rep1,static,moderate,1,2,800,1024,1793022403.167,1793022434.200
+dynamic__moderate__rep1,dynamic,moderate,1,2,800,1024,1793022437.202,1793022466.724
+static__heavy__rep1,static,heavy,1,3,1500,1024,1793022469.725,1793022500.749
+dynamic__heavy__rep1,dynamic,heavy,1,3,1500,1024,1793022504.000,1793022533.024

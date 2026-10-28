@@ -1,0 +1,3 @@
+flow_id,dst,rate_target_pps,size_bytes,packets_sent,bytes_sent,elapsed_s,throughput_bps
+12,10.0.0.2,400.0,1024,10000,10240000,25.0006,3276716.47
+11,10.0.0.2,400.0,1024,10000,10240000,25.0007,3276714.78
