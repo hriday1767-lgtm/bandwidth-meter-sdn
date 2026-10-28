@@ -1,0 +1,2 @@
+[receiver] listening on 0.0.0.0:5005 (idle timeout 4.0s)
+[receiver] flow=1: received=3992/4000 loss=0.20% throughput=0.81Mbps duration=20.10s
