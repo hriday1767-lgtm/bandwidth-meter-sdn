@@ -1,4 +1,3 @@
-cat << 'EOF' > Makefile
 # Bandwidth Meter and Traffic Analyzer -- run everything with make.
 #
 #   make all            clean -> controller -> load sweep -> comparison -> baseline
@@ -115,4 +114,3 @@ shots:
 
 all: check clean controller sweep compare baseline baseline-table multiclient multiclient-table summary stop
 	@echo "ALL DONE - results are in ./results"
-EOF
